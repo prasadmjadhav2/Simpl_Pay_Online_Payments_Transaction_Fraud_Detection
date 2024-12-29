@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Payments Transaction Fraud Detection</title>
+</head>
+<body>
+    <h1>Online Payments Transaction Fraud Detection</h1>
+    <form action="/predict" method="post">
+        <label for="step">Enter the Step:</label><br>
+        <input type="number" id="step" name="step" min="0" step="1"><br><br>
+        
+        <label for="payment_type">Enter the Payment Type:</label><br>
+        <input type="number" id="payment_type" name="payment_type" min="0" step="1"><br><br>
+        
+        <label for="amount">Enter the Amount:</label><br>
+        <input type="number" id="amount" name="amount" min="0" step="0.01"><br><br>
+        
+        <label for="oldbalance_org">Enter the Old Balance Org:</label><br>
+        <input type="number" id="oldbalance_org" name="oldbalance_org" min="0" step="0.01"><br><br>
+        
+        <label for="newbalance_orig">Enter the New Balance Orig:</label><br>
+        <input type="number" id="newbalance_orig" name="newbalance_orig" min="0" step="0.01"><br><br>
+        
+        <label for="oldbalance_dest">Enter the Old Balance Dest:</label><br>
+        <input type="number" id="oldbalance_dest" name="oldbalance_dest" min="0" step="0.01"><br><br>
+        
+        <label for="newbalance_dest">Enter the New Balance Dest:</label><br>
+        <input type="number" id="newbalance_dest" name="newbalance_dest" min="0" step="0.01"><br><br>
+        
+        <input type="submit" value="Predict">
+    </form>
+</body>
+</html>
